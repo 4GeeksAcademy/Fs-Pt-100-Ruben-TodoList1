@@ -9,3 +9,69 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+body {
+    background-image:linear-gradient(180deg, #74716c, #00031b 121.35%);
+    height: 100vh;
+    width: 100%;
+}
+h1 {
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+input {
+    width: 85%;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 13px;
+
+    outline: none;
+}
+
+input:focus {
+    border-color: #fcfeff;
+    box-shadow: 0 0 10px rgba(100, 63, 31, 0.816);
+}
+
+.tareas {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: rgb(193, 165, 119);
+    max-width: 400px;
+    padding: 10px 20px;
+    margin: auto;
+    min-height: 30vh;
+    color: rgb(76, 79, 85);
+    border: rgb(27, 27, 32) 7px outset;
+    box-shadow: 12px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+li {
+    list-style: none;
+    font-family: "Playwrite IN", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 15px;
+    padding: 10px;
+}
+
+li:hover {
+    background-color: rgba(193, 165, 119, 0.789);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5px;
+}
+span {
+    visibility: hidden; 
+  }
+  
+li:hover span {
+    visibility: visible; 
+  }
